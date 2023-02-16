@@ -1,0 +1,104 @@
+.container_card_details {
+    width: 100%;
+    justify-content: center;
+    margin: auto;
+    padding: auto;
+}
+
+.details {
+    background-image: url("../../assets/pokemon_pokeball-wallpaper-1920x1080.jpg");
+    background-repeat: no-repeat;
+    width: 70%;
+    height: 500px;
+    margin-top: 20px;
+    margin-left: 200px;
+    border-radius: 1rem;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.267);
+    display: grid;
+    grid-template-columns: 30% 65%;
+    padding: 20px 0 20px;
+    gap: 22em;
+}
+
+.columns_info {
+    color: red;
+    background-color: black;
+    border-radius: 26px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.column_card{
+    margin-top: 50px;
+    margin-left: 10px;
+}
+.cardinter {
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: -40px;
+    left: 30px;
+}
+.button_back{
+    margin-left: 65px;
+}
+.img {
+    width: 400px;
+    height: 250px;
+    filter: drop-shadow(10px 10px 3px black);
+}
+
+.infoo {
+    background-color: transparent;
+    width: 100vh;
+}
+.button_back a{
+    background-color: red;
+    color: black;
+    padding: 10px 20px;
+    margin-top: 55px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: all 600ms ease;
+    font-weight: bold;
+    font-family: "Sono";
+    font-size: 15px;
+
+}
+.button_back a:hover {
+    color: black;
+    font-weight: bold;
+    transform: scale(1.05);
+}
+.name_details{
+    color:red;
+}
+@media (max-width:1000px) {
+    .columns_info {
+        margin: -10px auto 20px auto;
+        width: 80%;
+        height: 100%;
+    }
+    .column_card{
+        margin: 10px auto -90px auto;
+    }.details{
+        height: 50%;
+        width: 80%;
+        gap: 5em;
+        margin:  20px auto -50px auto;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+    }
+}
+
+
+@media (max-width:1359px) {
+    .details{
+        gap: 15em;
+    }
+
+}

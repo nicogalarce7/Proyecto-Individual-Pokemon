@@ -1,0 +1,18 @@
+.contenedorFilters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+}
+.filter_Div{
+    margin: 25px 15px 20px 90px;
+}
+@media (max-width:1412px){
+    .contenedorFilters{
+        gap: 10px;
+    }
+  }
+@media (max-width:980px){
+    .contenedorFilters{
+        gap: 0px;
+    }
+  }

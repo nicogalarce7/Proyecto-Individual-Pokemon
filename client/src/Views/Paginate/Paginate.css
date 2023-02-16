@@ -1,0 +1,20 @@
+.container_pag{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap:230px
+}
+
+.prevB{
+    background-color: red;
+    border-radius: 25px;
+}
+.nextB{
+    background-color: red;
+    border-radius: 25px;
+}
+@media (max-width:790px){
+    .container_pag{
+        gap:130px
+    }
+  }

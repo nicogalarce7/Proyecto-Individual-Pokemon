@@ -1,0 +1,16 @@
+.contenedorhome {
+    margin: 20px;
+    padding: 0;
+    background-color: white;
+}
+.bar {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+}
+@media (max-width:600px){
+    .container_cards{
+        margin-top: -50px;
+    }
+  }

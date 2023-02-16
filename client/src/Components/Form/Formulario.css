@@ -1,0 +1,206 @@
+.button_back {
+  margin-top: 15px;
+}
+.divs{
+  display: flex;
+}
+.formulario_F {
+  background-image: url("../../assets/pokemon_pokeball-wallpaper-1920x1080.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 78%;
+  height: 100%;
+  margin:20px auto 20px auto;
+  border: 2px solid ;
+  border-radius: 1rem;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.267);
+  display: grid;
+  grid-template-columns: 40% 60%;
+  justify-content: center;
+  position: relative;
+  gap: 15em;
+}
+.card_Form {
+  margin: 50px auto 20px 250px;
+}
+.title_Fr{
+  margin-top: -30px;
+  font-size: 20px;
+  padding-left: 100px;
+}
+.form-register {
+  margin: 5px auto auto auto;
+  width: 50%;
+  background: black;
+  padding: 22px;
+  border-radius: 14px;
+  font-family: 'calibri';
+  color: white;
+  box-shadow: 7px 13px 37px #000;
+}
+
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  width: 100%;
+  background: red;
+  border: none;
+  padding: 12px;
+  color: black;
+  margin: 16px 0;
+  font-size: 16px;
+  border-radius: 20px;
+}
+.erroree_types{
+  padding-left: 10px;
+  width: 96%;
+  border-radius: 5px;
+  color: red;
+  background-color: white;
+  margin-top: 7px;
+  height: 19px;
+  font-size: 15px;
+  margin-bottom: 0;
+}
+.erroree {
+  padding-left: 10px;
+  width: 96%;
+  border-radius: 5px;
+  color: red;
+  background-color: white;
+  margin-top: -10px;
+  height: 19px;
+  font-size: 15px;
+  margin-bottom: 9px;
+}
+
+.controls {
+  width: 95%;
+  background: white;
+  padding: 4px;
+  margin-right: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 3px solid red;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: black
+}
+
+.controlss {
+  width: 95%;
+  background: white;
+  padding: 4px;
+  margin-right: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 3px solid red;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: black
+}
+
+.form-register p {
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+
+}
+
+.form-register a {
+  color: black;
+  text-decoration: none;
+
+}
+
+.form-register a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.form-register .botons {
+  width: 100%;
+  background: red;
+  border: none;
+  padding: 12px;
+  color: black;
+  margin: 16px 0 ;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border-radius: 20px;
+}
+
+.select_F {
+  width: 98%;
+  padding: 5px;
+  outline: 0;
+  box-shadow: none;
+  font-size: 17px;
+  border-color: red;
+  background: white;
+  background-image: none;
+  flex: 1;
+  padding: 0 .5em;
+  color: gray;
+  cursor: pointer;
+}
+
+.select_F::-ms-expand {
+  display: none;
+}
+
+.select_F {
+  position: relative;
+  display: flex;
+  width: 98%;
+  height: 25px;
+  background: white;
+  border-color: 5px solid red;
+  overflow: hidden;
+  border-radius: .25em;
+}
+
+.select_F::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: #2b2e2e;
+  cursor: pointer;
+  pointer-events: none;
+  transition: .25s all ease;
+}
+
+.type_R button {
+  color: black;
+  margin-right: 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  margin-top: 8px;
+  background: red;
+  width: 150px;
+  height: 30px;
+}
+@media (max-width:1000px) {
+  .formulario_F{
+    height: 100%;
+    margin: 20px auto -40px auto;
+    grid-template-columns: auto;
+  } 
+  .card_Form {
+    display: none;
+  }
+  .form-register{
+    margin: 10px auto 20px auto;
+    width: 80%;
+    height:85%;
+    box-shadow: none;
+  }
+}
+@media (max-width:1200px){
+  .formulario_F{
+    gap: 10em;
+  }
+}

@@ -1,0 +1,196 @@
+.container_Navbar {
+    background-color: black;
+    height: 70px;
+    display: grid;
+    grid-template-columns: 48% 40%;
+    top: 0px;
+    z-index: 20;
+    gap: 22em;
+}
+
+.title_nav h2 {
+    color: red;
+}
+
+.container_Navbar div {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 67%;
+    align-content: center;
+    justify-content: center;
+}
+
+.list {
+    color: red;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.listItem {
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+}
+
+.listItem a {
+    color: red;
+    padding: 10px 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: all 600ms ease;
+    font-weight: bold;
+    border: 2px solid red;
+}
+
+.active {
+    background-color:rgba(184, 6, 6, 0.43);
+}
+
+.listItem a:hover {
+    background-color: black;
+    color: red;
+    font-weight: bold;
+    transform: scale(1.05);
+}
+
+@media (max-width: 750px) {
+    .container_Navbar {
+        gap:7.6em
+    }
+    .navToggler {
+        height: 60px;
+        width: 60px;
+        margin-right: -200px;
+        cursor: pointer;
+        left: 300px;
+        top: 40px;
+        background: transparent;
+        display: none;
+        align-items: center;
+        transition: all 900ms ease;
+        z-index: 30;
+    }
+
+    .navTogglerOpen {
+        cursor: pointer;
+        border-radius: 5px;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        transition: all 900ms ease;
+        z-index: 30;
+    }
+
+    .navToggler span {
+        height: 5px;
+        width: 35px;
+        border-radius: 12px;
+        background: red;
+        display: inline-block;
+        position: relative;
+    }
+
+    .navTogglerOpen span {
+        height: 5px;
+        width: 35px;
+        border-radius: 12px;
+        background-color: transparent;
+        display: inline-block;
+        position: relative;
+    }
+
+    .navToggler span::before {
+        content: " ";
+        height: 5px;
+        width: 35px;
+        border-radius: 12px;
+        background:red;
+        position: absolute;
+        top: -12px;
+        left: 0;
+    }
+
+    .navTogglerOpen span::before {
+        box-sizing: border-box;
+        content: " ";
+        height: 5px;
+        width: 35px;
+        border-radius: 12px;
+        background: red;
+        position: absolute;
+        left: 0;
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+    .navToggler span::after {
+        content: " ";
+        height: 5px;
+        width: 35px;
+        border-radius: 12px;
+        background: red;
+        position: absolute;
+        top: 12px;
+        left: 0;
+    }
+
+    .navTogglerOpen span::after {
+        content: " ";
+        height: 5px;
+        width: 35px;
+        border-radius: 12px;
+        background:red;
+        position: absolute;
+        left: 0;
+        transform: rotate(-45deg);
+        top: 0;
+    }
+
+    .container {
+        grid-template-columns: 80% 20%;
+    }
+
+    .list {
+        width: 100%;
+        background: black;
+        position: fixed;
+        right: 10px;
+        top: -20px;
+        border-radius: 0px 0px 14px 14px;
+        padding: 25px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+        transition: all 0.8s ease;
+        right: 0;
+        padding-top: 70px;
+    }
+
+    .listOpen {
+        right: -700px;
+        /* top:-700px; */
+    }
+
+    .listItem {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .listItem a {
+        width: 60%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

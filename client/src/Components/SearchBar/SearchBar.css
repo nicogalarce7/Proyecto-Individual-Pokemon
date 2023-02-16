@@ -1,0 +1,38 @@
+.input {
+  width: 380px;
+  height: 30px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  outline: none;
+  margin-top: 60px;
+  border-bottom: 2px solid #3f3f3f;
+  caret-color: #3f3f3f;
+  background-color: #212121;
+  padding: 5px;
+  transition: .5s linear;
+  font-family: monospace;
+  margin-left: -45px;
+
+}
+
+.input:focus {
+  border: 2px solid #fa4753;
+  caret-color: #fa4753;
+  color: #fa4753;
+  box-shadow: 4px 4px 10px #070707;
+}
+
+.input:focus::placeholder {
+  color: #fa4753;
+}
+@media (max-width:1295px){
+  .input{
+    width: 250px;
+    margin-left: 0;
+  }
+}
+@media (max-width:790px){
+  .input{
+    margin-top: 0;
+  }
+}
