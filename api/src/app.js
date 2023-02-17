@@ -16,6 +16,7 @@ server.use(cookieParser());
 server.use(morgan('dev'));
 server.use(cors());
 server.use((req, res, next) => {  
+  res.header('Access-Control-Allow-Origin', 'https://pokkemon.vercel.app');
   res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, DELETE');
   next();
 });
