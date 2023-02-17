@@ -3,7 +3,7 @@ import { allPokemons, allTypes } from "./Slices";
 
 export const getAllPokemon = async (dispacth) => {
   try {
-    const petition = await axios.get("http://localhost:3001/pokemons");
+    const petition = await axios.get("https://proyecto-individual-pokemon-production.up.railway.app/pokemons");
     dispacth(allPokemons(petition?.data));
   } catch (error) {
     return error.response;
@@ -11,7 +11,7 @@ export const getAllPokemon = async (dispacth) => {
 };
 export async function apiAllTypes(dispatch) {
   try {
-    const peticion = await axios.get("http://localhost:3001/types");
+    const peticion = await axios.get("https://proyecto-individual-pokemon-production.up.railway.app/types");
     dispatch(allTypes(peticion?.data));
   } catch (error) {
     return error.response;
@@ -20,7 +20,7 @@ export async function apiAllTypes(dispatch) {
 export const getByName = async (dispacth, name) => {
   try {
     const petition = await axios.get(
-      `http://localhost:3001/pokemons/name?name=${name}`
+      `https://proyecto-individual-pokemon-production.up.railway.app/pokemons/name?name=${name}`
     );
     dispacth(allPokemons(petition?.data));
   } catch (error) {
@@ -28,7 +28,7 @@ export const getByName = async (dispacth, name) => {
   }
 };
 export async function apiPostPokemon(newPokemon) {
-  return await axios.post("http://localhost:3001/pokemons", {
+  return await axios.post("https://proyecto-individual-pokemon-production.up.railway.app/pokemons", {
     ...newPokemon,
     name: newPokemon.name,
     img: newPokemon.img,
