@@ -12,7 +12,7 @@ export default function Details() {
   const navigate = useNavigate();
   useEffect(() => {
     axios
-      .get(`http://localhost:3001/pokemons/id/${id}`)
+      .get(`https://proyecto-individual-pokemon-production.up.railway.app/pokemons/id/${id}`)
       .then((e) => setPokemon(e.data[0]))
       .catch((err) => {
         return err;
